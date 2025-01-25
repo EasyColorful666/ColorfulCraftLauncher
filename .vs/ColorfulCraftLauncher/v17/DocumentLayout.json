@@ -1,0 +1,141 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\\u9648\u601D\u6E90\\source\\repos\\ColorfulCraftLauncher\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{2D40005F-8A67-463E-AF91-D1359A2E3ACE}|ColorfulCraftLauncher\\ColorfulCraftLauncher.csproj|c:\\users\\\u9648\u601D\u6E90\\source\\repos\\colorfulcraftlauncher\\colorfulcraftlauncher\\view\\windows\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2D40005F-8A67-463E-AF91-D1359A2E3ACE}|ColorfulCraftLauncher\\ColorfulCraftLauncher.csproj|solutionrelative:colorfulcraftlauncher\\view\\windows\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2D40005F-8A67-463E-AF91-D1359A2E3ACE}|ColorfulCraftLauncher\\ColorfulCraftLauncher.csproj|c:\\users\\\u9648\u601D\u6E90\\source\\repos\\colorfulcraftlauncher\\colorfulcraftlauncher\\viewmodel\\window\\mainwindowviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2D40005F-8A67-463E-AF91-D1359A2E3ACE}|ColorfulCraftLauncher\\ColorfulCraftLauncher.csproj|solutionrelative:colorfulcraftlauncher\\viewmodel\\window\\mainwindowviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2D40005F-8A67-463E-AF91-D1359A2E3ACE}|ColorfulCraftLauncher\\ColorfulCraftLauncher.csproj|c:\\users\\\u9648\u601D\u6E90\\source\\repos\\colorfulcraftlauncher\\colorfulcraftlauncher\\view\\windows\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{2D40005F-8A67-463E-AF91-D1359A2E3ACE}|ColorfulCraftLauncher\\ColorfulCraftLauncher.csproj|solutionrelative:colorfulcraftlauncher\\view\\windows\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2D40005F-8A67-463E-AF91-D1359A2E3ACE}|ColorfulCraftLauncher\\ColorfulCraftLauncher.csproj|c:\\users\\\u9648\u601D\u6E90\\source\\repos\\colorfulcraftlauncher\\colorfulcraftlauncher\\viewmodel\\window\\offlineauthenticatorviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2D40005F-8A67-463E-AF91-D1359A2E3ACE}|ColorfulCraftLauncher\\ColorfulCraftLauncher.csproj|solutionrelative:colorfulcraftlauncher\\viewmodel\\window\\offlineauthenticatorviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2D40005F-8A67-463E-AF91-D1359A2E3ACE}|ColorfulCraftLauncher\\ColorfulCraftLauncher.csproj|c:\\users\\\u9648\u601D\u6E90\\source\\repos\\colorfulcraftlauncher\\colorfulcraftlauncher\\view\\windows\\offlineauthenticatorwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{2D40005F-8A67-463E-AF91-D1359A2E3ACE}|ColorfulCraftLauncher\\ColorfulCraftLauncher.csproj|solutionrelative:colorfulcraftlauncher\\view\\windows\\offlineauthenticatorwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2D40005F-8A67-463E-AF91-D1359A2E3ACE}|ColorfulCraftLauncher\\ColorfulCraftLauncher.csproj|c:\\users\\\u9648\u601D\u6E90\\source\\repos\\colorfulcraftlauncher\\colorfulcraftlauncher\\view\\windows\\yggdrasilauthenticatorwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{2D40005F-8A67-463E-AF91-D1359A2E3ACE}|ColorfulCraftLauncher\\ColorfulCraftLauncher.csproj|solutionrelative:colorfulcraftlauncher\\view\\windows\\yggdrasilauthenticatorwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2D40005F-8A67-463E-AF91-D1359A2E3ACE}|ColorfulCraftLauncher\\ColorfulCraftLauncher.csproj|c:\\users\\\u9648\u601D\u6E90\\source\\repos\\colorfulcraftlauncher\\colorfulcraftlauncher\\view\\windows\\yggdrasilauthenticatorwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2D40005F-8A67-463E-AF91-D1359A2E3ACE}|ColorfulCraftLauncher\\ColorfulCraftLauncher.csproj|solutionrelative:colorfulcraftlauncher\\view\\windows\\yggdrasilauthenticatorwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "MainWindow.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\\u9648\u601D\u6E90\\source\\repos\\ColorfulCraftLauncher\\ColorfulCraftLauncher\\View\\Windows\\MainWindow.xaml.cs",
+              "RelativeDocumentMoniker": "ColorfulCraftLauncher\\View\\Windows\\MainWindow.xaml.cs",
+              "ToolTip": "C:\\Users\\\u9648\u601D\u6E90\\source\\repos\\ColorfulCraftLauncher\\ColorfulCraftLauncher\\View\\Windows\\MainWindow.xaml.cs",
+              "RelativeToolTip": "ColorfulCraftLauncher\\View\\Windows\\MainWindow.xaml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAABAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-27T10:30:08.622Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "MainWindow.xaml",
+              "DocumentMoniker": "C:\\Users\\\u9648\u601D\u6E90\\source\\repos\\ColorfulCraftLauncher\\ColorfulCraftLauncher\\View\\Windows\\MainWindow.xaml",
+              "RelativeDocumentMoniker": "ColorfulCraftLauncher\\View\\Windows\\MainWindow.xaml",
+              "ToolTip": "C:\\Users\\\u9648\u601D\u6E90\\source\\repos\\ColorfulCraftLauncher\\ColorfulCraftLauncher\\View\\Windows\\MainWindow.xaml",
+              "RelativeToolTip": "ColorfulCraftLauncher\\View\\Windows\\MainWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-01-05T08:25:16.149Z",
+              "IsPinned": true
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "YggdrasilAuthenticatorWindow.xaml",
+              "DocumentMoniker": "C:\\Users\\\u9648\u601D\u6E90\\source\\repos\\ColorfulCraftLauncher\\ColorfulCraftLauncher\\View\\Windows\\YggdrasilAuthenticatorWindow.xaml",
+              "RelativeDocumentMoniker": "ColorfulCraftLauncher\\View\\Windows\\YggdrasilAuthenticatorWindow.xaml",
+              "ToolTip": "C:\\Users\\\u9648\u601D\u6E90\\source\\repos\\ColorfulCraftLauncher\\ColorfulCraftLauncher\\View\\Windows\\YggdrasilAuthenticatorWindow.xaml",
+              "RelativeToolTip": "ColorfulCraftLauncher\\View\\Windows\\YggdrasilAuthenticatorWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-12-27T10:30:49.245Z",
+              "IsPinned": true
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "YggdrasilAuthenticatorWindow.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\\u9648\u601D\u6E90\\source\\repos\\ColorfulCraftLauncher\\ColorfulCraftLauncher\\View\\Windows\\YggdrasilAuthenticatorWindow.xaml.cs",
+              "RelativeDocumentMoniker": "ColorfulCraftLauncher\\View\\Windows\\YggdrasilAuthenticatorWindow.xaml.cs",
+              "ToolTip": "C:\\Users\\\u9648\u601D\u6E90\\source\\repos\\ColorfulCraftLauncher\\ColorfulCraftLauncher\\View\\Windows\\YggdrasilAuthenticatorWindow.xaml.cs",
+              "RelativeToolTip": "ColorfulCraftLauncher\\View\\Windows\\YggdrasilAuthenticatorWindow.xaml.cs",
+              "ViewState": "AgIAACMAAAAAAAAAAAAowC0AAABCAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-27T10:31:33.575Z",
+              "IsPinned": true
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "OfflineAuthenticatorWindow.xaml",
+              "DocumentMoniker": "C:\\Users\\\u9648\u601D\u6E90\\source\\repos\\ColorfulCraftLauncher\\ColorfulCraftLauncher\\View\\Windows\\OfflineAuthenticatorWindow.xaml",
+              "RelativeDocumentMoniker": "ColorfulCraftLauncher\\View\\Windows\\OfflineAuthenticatorWindow.xaml",
+              "ToolTip": "C:\\Users\\\u9648\u601D\u6E90\\source\\repos\\ColorfulCraftLauncher\\ColorfulCraftLauncher\\View\\Windows\\OfflineAuthenticatorWindow.xaml",
+              "RelativeToolTip": "ColorfulCraftLauncher\\View\\Windows\\OfflineAuthenticatorWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-12-27T10:30:47.833Z",
+              "IsPinned": true
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "OfflineAuthenticatorViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\\u9648\u601D\u6E90\\source\\repos\\ColorfulCraftLauncher\\ColorfulCraftLauncher\\ViewModel\\Window\\OfflineAuthenticatorViewModel.cs",
+              "RelativeDocumentMoniker": "ColorfulCraftLauncher\\ViewModel\\Window\\OfflineAuthenticatorViewModel.cs",
+              "ToolTip": "C:\\Users\\\u9648\u601D\u6E90\\source\\repos\\ColorfulCraftLauncher\\ColorfulCraftLauncher\\ViewModel\\Window\\OfflineAuthenticatorViewModel.cs",
+              "RelativeToolTip": "ColorfulCraftLauncher\\ViewModel\\Window\\OfflineAuthenticatorViewModel.cs",
+              "ViewState": "AgIAABYAAAAAAAAAAAAQwCAAAAA5AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-08T07:36:02.881Z",
+              "IsPinned": true
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "MainWindowViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\\u9648\u601D\u6E90\\source\\repos\\ColorfulCraftLauncher\\ColorfulCraftLauncher\\ViewModel\\Window\\MainWindowViewModel.cs",
+              "RelativeDocumentMoniker": "ColorfulCraftLauncher\\ViewModel\\Window\\MainWindowViewModel.cs",
+              "ToolTip": "C:\\Users\\\u9648\u601D\u6E90\\source\\repos\\ColorfulCraftLauncher\\ColorfulCraftLauncher\\ViewModel\\Window\\MainWindowViewModel.cs",
+              "RelativeToolTip": "ColorfulCraftLauncher\\ViewModel\\Window\\MainWindowViewModel.cs",
+              "ViewState": "AgIAAMkAAAAAAAAAAAAAwNYAAAAlAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-05T09:03:10.46Z",
+              "IsPinned": true
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
