@@ -33,7 +33,6 @@
     <None Remove="Img\下载.png" />
     <None Remove="Img\刷新.png" />
     <None Remove="Img\多人.png" />
-    <None Remove="Img\头像.png" />
     <None Remove="Img\模组.png" />
     <None Remove="Img\设置.png" />
     <None Remove="Img\账户.png" />
@@ -43,6 +42,7 @@
     <None Remove="TAP\tap0901.cat" />
     <None Remove="TAP\tap0901.sys" />
     <None Remove="TAP\tapinstall.exe" />
+    <None Remove="View\Windows\aaa7ffb2f2785400cd4007243b9a8cad.jpg" />
   </ItemGroup>
 
   <ItemGroup>
@@ -70,9 +70,6 @@
     <Resource Include="Img\多人.png">
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
     </Resource>
-    <Resource Include="Img\头像.png">
-      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
-    </Resource>
     <Resource Include="Img\模组.png">
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
     </Resource>
@@ -97,6 +94,7 @@
     <Resource Include="TAP\tapinstall.exe">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Resource>
+    <Resource Include="View\Windows\aaa7ffb2f2785400cd4007243b9a8cad.jpg" />
   </ItemGroup>
 
   <ItemGroup>

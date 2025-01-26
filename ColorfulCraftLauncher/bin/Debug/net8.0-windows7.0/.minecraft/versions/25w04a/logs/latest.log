@@ -1,0 +1,8 @@
+[18:16:56] [Datafixer Bootstrap/INFO]: 259 Datafixer optimizations took 1950 milliseconds
+[18:17:01] [Render thread/INFO]: Environment: Environment[sessionHost=https://sessionserver.mojang.com, servicesHost=https://api.minecraftservices.com, name=PROD]
+[18:17:01] [Render thread/INFO]: Setting user: EasyColorful666
+[18:17:01] [Render thread/INFO]: Backend library: LWJGL version 3.3.3+5
+[18:17:02] [Render thread/INFO]: Reloading ResourceManager: vanilla
+[18:17:02] [Worker-Main-6/INFO]: Found unifont_all_no_pua-16.0.01.hex, loading
+[18:17:02] [Worker-Main-1/INFO]: Found unifont_jp_patch-16.0.01.hex, loading
+[18:17:02] [Render thread/INFO]: Stopping!

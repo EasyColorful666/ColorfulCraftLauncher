@@ -1,0 +1,2 @@
+C:\Users\Administrator\Source\Repos\ColorfulCraftLauncher\ColorfulCraftLauncher\bin\Release\net8.0-windows\publish\win-x64\ColorfulCraftLauncher.pdb
+C:\Users\Administrator\Source\Repos\ColorfulCraftLauncher\ColorfulCraftLauncher\bin\Release\net8.0-windows\publish\win-x64\ColorfulCraftLauncher.exe

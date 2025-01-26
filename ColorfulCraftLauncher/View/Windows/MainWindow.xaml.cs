@@ -1,6 +1,4 @@
-﻿using ColorfulCraftLauncher;
-using MinecraftLaunch.Classes.Enums;
-using MinecraftLaunch.Components.Fetcher;
+﻿
 using System.Windows;
 
 namespace ColorfulCraftLauncher

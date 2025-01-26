@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-C:\Users\陈思源\source\repos\ColorfulCraftLauncher\ColorfulCraftLauncher\obj\Debug\net8.0-windows7.0\
+C:\Users\Administrator\Source\Repos\ColorfulCraftLauncher\ColorfulCraftLauncher\obj\Debug\net8.0-windows7.0\
 ColorfulCraftLauncher
 none
 false
 TRACE;DEBUG;NET;NET8_0;NETCOREAPP
-C:\Users\陈思源\source\repos\ColorfulCraftLauncher\ColorfulCraftLauncher\App.xaml
-3-382642938
-4-1399290169
-14-1638724462
-210262658766
-View\Windows\MainWindow.xaml;View\Windows\OfflineAuthenticatorWindow.xaml;View\Windows\YggdrasilAuthenticatorWindow.xaml;
+C:\Users\Administrator\Source\Repos\ColorfulCraftLauncher\ColorfulCraftLauncher\App.xaml
+4-1990697028
+4-600720372
+15-1672432027
+210-2055317630
+View\Windows\DownloadJavaWindow.xaml;View\Windows\MainWindow.xaml;View\Windows\OfflineAuthenticatorWindow.xaml;View\Windows\YggdrasilAuthenticatorWindow.xaml;
 
-True
+False
 

@@ -9,19 +9,12 @@ using MinecraftLaunch.Components.Resolver;
 using MinecraftLaunch.Classes.Models.Auth;
 using MinecraftLaunch.Classes.Models.Launch;
 using MinecraftLaunch.Utilities;
-using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.Diagnostics;
-using System.Linq;
-using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Input;
-using MinecraftLaunch;
 using System.IO;
-
-using System.Windows.Controls;
-using GalaSoft.MvvmLight.Messaging;
-using GalaSoft.MvvmLight.Ioc;
+using ColorfulCraftLauncher.View.Windows;
 
 
 namespace ColorfulCraftLauncher
@@ -37,7 +30,7 @@ namespace ColorfulCraftLauncher
         private ObservableCollection<string> _localVersions;
         private ObservableCollection<string> _accounts = new ObservableCollection<string>();
         private ObservableCollection<Account> _users = new ObservableCollection<Account>();
-        private ObservableCollection<string> _modVersions;
+        private ObservableCollection<string> _modVersions = new ObservableCollection<string>();
         private string _selectedVersion;
         private string _selectedLocalVersion;
         private string _selectedAccount;
@@ -49,14 +42,15 @@ namespace ColorfulCraftLauncher
         private string _server;
         private string _passwd;
         private string _loginedAccount;
-        p
-        OfflineAuthenticatorViewModel offlineAuthenticatorViewModel;
+        private int _selectedIndex;
+        private ObservableCollection<string> _javaList;
         private ObservableCollection<string> _usertype = new ObservableCollection<string>();
         private double _progressValue;
         Process edgeProcess;
         
         
         public ICommand LoadCommand { get; }
+        public ICommand DownloadJavaCommand { get; }
         public ICommand AuthenticateMicrosoftCommand { get; }
         public ICommand AuthenticateYggdrasilCommand { get; }
         public ICommand AuthenticateOfflineCommand { get; }
@@ -99,6 +93,11 @@ namespace ColorfulCraftLauncher
         {
             get => _modVersions;
             set => Set(ref _modVersions, value);
+        }
+        public ObservableCollection<string> JavaList
+        {
+            get => _javaList;
+            set => Set(ref _javaList, value);
         }
 
         public string SelectedVersion
@@ -173,7 +172,7 @@ namespace ColorfulCraftLauncher
             TapInstallCommand = new RelayCommand(TapInstall);
             N2NStartCommand = new RelayCommand(N2NStart);
             RefreshGameListCommand =  new RelayCommand(RefreshGameList);
-
+            DownloadJavaCommand = new RelayCommand(DownloadJava);
 
 
 
@@ -304,57 +303,64 @@ namespace ColorfulCraftLauncher
 
         private async void LaunchGameAsync()
         {
-            if (string.IsNullOrEmpty(SelectedLocalVersion))
+            try
             {
-                Growl.Error("请选择一个游戏版本。");
-                return;
-            }
+                if (string.IsNullOrEmpty(SelectedLocalVersion))
+                {
+                    Growl.Error("请选择一个游戏版本。");
+                    return;
+                }
 
-            if (!Accounts.Any())
+                if (!Accounts.Any())
+                {
+                    Growl.Error("请先添加一个用户。");
+                    return;
+                }
+
+                var javaList = _javaFetcher.Fetch();
+                _config.JvmConfig = new JvmConfig(JavaUtil.GetCurrentJava(javaList, _resolver.GetGameEntity(SelectedLocalVersion)).JavaPath);
+
+                var game = await _launcher.LaunchAsync(SelectedLocalVersion);
+                Growl.Success($"成功启动游戏版本: {SelectedLocalVersion}");
+            }
+            catch
             {
-                Growl.Error("请先添加一个用户。");
-                return;
+                 Growl.Ask("未检测到Java,是否安装Java21 ", isConfirmed =>
+                {
+                    DownloadJavaCommand.Execute(null);
+                    JavaFetcher javaFetcher = new();
+                    var javas = javaFetcher.FetchAsync();
+                    foreach (var java in javas.Result.ToList()) 
+                    { 
+                        _javaList.Add(java.JavaVersion+$"({java.JavaPath})");
+                    }
+                    return false;
+                });
+
             }
-
-            var javaList = _javaFetcher.Fetch();
-            _config.JvmConfig = new JvmConfig(JavaUtil.GetCurrentJava(javaList, _resolver.GetGameEntity(SelectedLocalVersion)).JavaPath);
-
-            var game = await _launcher.LaunchAsync(SelectedLocalVersion);
-            Growl.Success($"成功启动游戏版本: {SelectedLocalVersion}");
         }
-
-        private void SelectAccount()
+       
+        void DownloadJava()
         {
-            Growl.Success(SelectedIndex.ToString());
-            // Logic to select account and update config.Account
+            DownloadJavaWindow downloadJavaWindow = new DownloadJavaWindow();
+            downloadJavaWindow.ShowDialog();
+        }
+        private async void SelectAccount()
+        {
+
             if (_selectedAccount == null)
             {
                 Growl.Error("请选择一个账户 。");
                 return;
             }
-            switch (_usertype[SelectedIndex])
-            {
-                case "Microsoft":
-                    _config.Account = _users[SelectedIndex] as MicrosoftAccount;
-                   
-                    Growl.Error("未知的用户类型。");
-                    break;
 
-                case "Yggdrasil":
-                    _config.Account = _users[SelectedIndex] as YggdrasilAccount;
-                    
-                    break;
+            _config.Account = _users[SelectedIndex];
+            Growl.Success($"{_accounts[SelectedIndex]}，欢迎回来");
+            
 
-                case "Offline":
-                    _config.Account = _users[SelectedIndex] as OfflineAccount;
-                    
-                    break;
-
-                default:
-                    Growl.Error("未知的用户类型。");
-                    break;
-            }
+              
         }
+
         
         private async void SearchMods()
         {
@@ -379,7 +385,7 @@ namespace ColorfulCraftLauncher
             {
                 processInfo = new ProcessStartInfo(command, arguments);
 
-                processInfo.UseShellExecute = false;
+                processInfo.UseShellExecute = true;
 
                 processInfo.RedirectStandardOutput = true;
 
@@ -466,7 +472,7 @@ namespace ColorfulCraftLauncher
             //删除当前正在运行的进程
             KillProcessByName("edge.exe", command);
 
-            string arga = "-c easycolorful -l 103.40.13.21:20741 -E -x 1 -I 2ED8CB3E1AC2";
+            string arga = "-c easycolorful -l 103.40.13.21:20741 -E -x 1 -I D876AE2D2310";
 
 
             Growl.Success("开始执行N2N客户端");
@@ -484,7 +490,7 @@ namespace ColorfulCraftLauncher
 
                     processInfo.RedirectStandardError = true;
 
-                    processInfo.CreateNoWindow = false;
+                    processInfo.CreateNoWindow = true;
 
                     if (!string.IsNullOrWhiteSpace(path))
                     {
